@@ -1,0 +1,96 @@
+.img-thumbnail img{
+    width: 100%;
+}
+
+.img-thumbnail{
+    padding: 0;
+}
+
+.img-thumbnail .caption-full{
+    padding:9px;
+}
+
+#delete-form {
+    display: inline;
+}
+
+.jumbotron {
+    padding: 8rem 2rem;
+    background-image: url(http://wallpaper-house.com/data/out/10/wallpaper2you_373163.jpg);
+    background-size: 100%;
+    color: white;
+    cursor: default;
+}
+
+.current_events {
+    display: inline;
+}
+
+#new_post {
+    display: inline;
+    float: right;
+}
+
+.bg-company-dark{
+    background-color: darkred;
+}
+
+.current_events{
+    font-size: 150%;
+    font-weight: 100;
+}
+
+.image_show{
+    padding-bottom: 10px;
+}
+
+.show_button{
+    position:absolute;
+    bottom:50%;
+    right:35%;
+    opacity: 0;
+}
+
+.image_show{
+    position:relative;
+    display:inline-block;
+    text-align:center;
+}
+
+.image_show img {
+    transition:  0.2s;
+}
+
+.image_show:hover img {
+    -webkit-filter: brightness(70%);
+     transform:scale(1.05);
+}
+
+.image_show:hover .show_button {
+    opacity: 1;
+}
+
+.navbar{
+    padding: 0px;
+}
+
+.navbar-brand{
+    padding-left:25px;
+}
+
+.footer{
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    background-color: black;
+    transition: 0.2s linear;
+}
+
+.footer{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.login_page{
+    padding-bottom: 21%;
+}

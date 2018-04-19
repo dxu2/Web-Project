@@ -1,0 +1,29 @@
+<% include ../partials/header %>
+    <header class="jumbotron">
+            <div class="container">
+                <h1>Welcome to WPI CSA!</h1>
+                <p><h4>The quickiest way to learn csa</h4></p>
+            </div>
+        </header>
+    <div class="container">
+        <p class="current_events">Current Events</p>
+        <a id="new_post" class="btn btn-outline-secondary btn-sm" href="/csahomepage/new">Create new post</a>
+        <hr>
+        <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+            <% csaLives.forEach(function(csaLive){ %>
+                <div class="col-md-4 col-sm-6 image_show" >
+                    <div class="img-thumbnail image_show">
+                        <div class="homepage_image"><a href="/csahomepage/<%= csaLive._id%>"><img src=" <%= csaLive.image%> " style="width:100%"></a></div>
+                        <a href="/csahomepage/<%= csaLive._id%>" class="btn btn-outline-light show_button">More Info</a>
+                        <div class="caption">
+                            <p style="margin-bottom: 2px;"><h6><%= csaLive.name%></h6></p>
+                        </div>
+                        
+                    </div>
+                </div>
+            <%  }); %>
+        </div>
+        
+    </div>
+    
+<% include ../partials/footer %>
